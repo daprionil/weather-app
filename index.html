@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="p-2 bg-gray-200 flex items-center flex-col h-screen w-screen justify-center">
+        <div class="title-app relative bg-blue-400 px-5 py-3 rounded-full my-5 shadow-md_blue drop-shadow-2xl">
+            <h1 class="text-center text-2xl">Weather App</h1>
+            <p class="text-xs bg-opacity-50 bg-white text-center rounded-xl p-1">Cosulta el Clima Actual</p>
+            <div class="h-4 w-4 top-1 right-1 bg-red-500 flex items-center justify-center rounded-full absolute">
+                <div class="h-3 w-3 bg-red-600 animate-ping rounded-full"></div>
+            </div>
+        </div>
+        <div id="result-weather" class="bg-gray-800 flex items-center justify-center text-center shadow-md_blue p-3 rounded-full h-56 w-56 mx-auto">
+            <p class="border-b border-gray-600 text-white">Sin Resultados</p>
+        </div>
+        <div class="ctn-form-weather w-full max-w-lg mx-auto rounded-md shadow-lg border-t border-gray-600 bg-gray-50 mt-5 p-2">
+            <p class="text-center pt-2 border-b-2 border-gray-400">¡Consulta el Clima de Cualquier Ciudad!</p>            
+            <div class="ctn-form">
+                <form action="" id="formWeather">
+                    <div class="ctn-city ctn-input-form mt-2">
+                        <input placeholder="Ciudad" type="text" name="cityName" id="cityName" class="input">
+                    </div>
+                    <div class="ctn-country ctn-input-form mt-2">
+                        <select name="countryName" id="countryName" class="input">
+                            <option value="">Seleccionar</option>
+                            <option value="AL">Albania</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AT">Austria</option>
+                            <option value="BQ">Bolivia</option>
+                            <option value="BR">Brazil</option>
+                            <option value="CA">Canada</option>
+                            <option value="CL">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="US">Estados Unidos</option>
+                            <option value="MX">Mexico</option>
+                            <option value="CL">Chile</option>
+                            <option value="PA">Panamá</option>
+                            <option value="PE">Perú</option>
+                            <option value="ES">España</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="RU">Russia</option>
+                        </select>
+                    </div>
+                    <div class="ctn-btn-submit text-center mt-2">
+                        <button type="submit" class="button cursor-pointer bg-blue-400 text-white hover:text-black hover:border-blue-500">Consultar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
