@@ -48,7 +48,7 @@ function spinner(){
 function printWeather(data,city){
     clearResultHtml();
     const {temp,temp_min,temp_max} = data;
-    const cent = (temp) => parseInt(temp - 257);
+    const cent = (temp) => parseInt(temp - 273);
 
     const weatherHtml =  document.createElement('div');
     weatherHtml.classList.add('consult-weather','bg-gray-200','p-2','rounded-sm');
